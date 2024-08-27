@@ -1,0 +1,54 @@
+/* Cabecera */
+.cabecera {
+  padding: 2rem;
+  width: 100%;
+}
+
+.cabecera > a {
+  width: 5%;
+}
+
+.cabecera > a > img {
+  width: 3.5rem;
+}
+
+/* Buscador */
+form {
+  width: 95%;
+}
+
+.buscador {
+  border-radius: 4rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--grey-color);
+}
+
+input {
+  background-color: var(--grey-color);
+}
+
+.lupa {
+  width: 2.5rem;
+}
+
+#buscador {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+#buscador:focus {
+  outline: none;
+}
+
+/* Sin resultados */
+.no-res {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.no-res > p {
+  padding: 0.25rem;
+  font-size: 1.6rem;
+}

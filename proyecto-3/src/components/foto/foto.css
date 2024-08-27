@@ -1,0 +1,149 @@
+.foto {
+  margin-bottom: 10rem;
+  border-radius: 2rem;
+  background-size: cover;
+  background-position: 50%;
+  position: relative;
+  cursor: default;
+  /* Estilos responsive */
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.foto:hover {
+  cursor: default;
+}
+
+/* Dispositivos de pantalla muy pequeña */
+@media screen and (max-width: 424px) {
+  .foto {
+    width: 100%;
+    height: 22rem;
+  }
+}
+
+/* Dispositivos de pantalla pequeña */
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .foto {
+    width: 46%;
+    height: 22rem;
+  }
+}
+
+/* Dispositivos de pantalla mediana */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .foto {
+    width: 31%;
+    height: 45rem;
+  }
+}
+
+/* Dispositivos de pantalla grande */
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .foto {
+    width: 23%;
+    height: 45rem;
+  }
+}
+
+/* Dispositivos de pantalla muy grande */
+@media screen and (min-width: 1440px) {
+  .foto {
+    width: 18%;
+    height: 45rem;
+  }
+}
+
+.fondo_sombra::before {
+  border-radius: 2rem;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Descargas y favoritos */
+.estadisticas {
+  padding-top: 2rem;
+  width: 100%;
+  background-color: transparent;
+  /* Estilos responsive */
+  justify-content: space-around;
+}
+
+/* Enlace de la imagen */
+.visitar {
+  border-radius: 4rem;
+  background-color: var(--red-color);
+  position: absolute;
+}
+
+.visitar > a {
+  color: var(--white-color);
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Dispositivos de pantalla pequeña */
+@media screen and (max-width: 767px) {
+  .visitar {
+    padding: 1rem 2.5rem;
+    top: 35%;
+  }
+
+  .visitar > a {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dispositivos de pantalla mediana y grande */
+@media screen and (min-width: 768px) {
+  .visitar {
+    padding: 1.5rem 3rem;
+    top: 45%;
+  }
+
+  .visitar > a {
+    font-size: 1.6rem;
+  }
+}
+
+/* Foto de perfil */
+.usuario {
+  border-radius: 5rem;
+  width: 6rem;
+  height: 6rem;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute;
+  bottom: -3rem;
+}
+
+.usuario.grande {
+  width: 10rem;
+  height: 10rem;
+}
+
+/* Nombre del usuario y fecha de subida de la imagen */
+.nombre_fecha {
+  position: absolute;
+  bottom: -8rem;
+  /* Estilos responsive */
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nombre_fecha > span {
+  font-size: 1.4rem;
+}
+
+.fecha > img {
+  padding-right: 1rem;
+  width: 3rem;
+  vertical-align: middle;
+}
